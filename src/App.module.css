@@ -1,0 +1,26 @@
+:root {
+  --color: 248, 39%;
+  --l: 39%;
+
+  --color-primary: hsl(var(--color), var(--l));
+  --color-primary-darker: hsl(var(--color), calc(var(--l) + 20%));
+}
+
+.App {
+  padding: 2rem;
+  margin: 2rem;
+  text-align: center;
+
+  color: var(--color-primary);
+  border: 1px solid var(--color-primary);
+
+  cursor: pointer;
+
+  transition: all 200ms ease-in-out;
+
+  &:hover {
+    border-color: var(--color-primary-darker);
+    color: var(--color-primary-darker);
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+  }
+}
