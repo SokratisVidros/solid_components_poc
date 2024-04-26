@@ -1,14 +1,20 @@
-## Usage
+# Solid Components POC
 
-Those templates dependencies are maintained via [pnpm](https://pnpm.io) via `pnpm up -Lri`.
+A Vanilla JS SDK with components and a thin, framework specific wrapper in React.
 
-This is the reason you see a `pnpm-lock.yaml`. That being said, any package manager will work. This file can be safely be removed once you clone a template.
+![Screenshot](./screenshot.png)
 
-```bash
-$ npm install # or pnpm install or yarn install
-```
+## Architecture
 
-### Learn more on the [Solid Website](https://solidjs.com) and come chat with us on our [Discord](https://discord.com/invite/solidjs)
+1. A host react application
+3. A Vanilla JS SDK containg UI components built in SolidJS
+2. A React SDK exposing Vanilla JS SDK in react lingo
+
+![Architecture](./architecture.png)
+
+> [!NOTE]
+> To avoid using a monorepo, TSX files use the `.react` or `.solid` extension to instruct Vite about JSX parsing.
+> The `.react` files are using the Vite React JSX plugin, the `.solid` files are using the Vite Solid JSX plugin.
 
 ## Available Scripts
 
