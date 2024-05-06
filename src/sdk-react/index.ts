@@ -1,2 +1,2 @@
-export { useMySDK } from './hooks';
-export { Counter, CounterChild } from './components.react';
+export { useMySDK } from "./hooks";
+export { Counter } from "./components.react";
